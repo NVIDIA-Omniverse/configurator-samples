@@ -1,0 +1,7 @@
+Id,Name,Rim Style,Caliper Color,Rim1 Color,Rim2 Color,Rim3 Color,Body Color Id,Decal Stripe Visibility,Decal Stripe Color,Leather Color,Roof Visibility,Emblem Color,Screen Visibility,Screen Color
+0,Default,0,3,14,15,16,50,64,66,76,86,93,99,109
+1,Stealth,1,3,14,15,16,50,65,66,79,86,93,100,101
+2,Jensen's Jacket,2,7,29,30,31,54,64,66,80,87,93,100,101
+3,Three Crowns,0,4,26,27,28,51,64,75,85,86,94,100,101
+4,Ghost,0,5,23,24,25,59,65,66,77,86,95,100,101
+5,Redline,1,9,44,45,46,56,65,66,82,87,98,99,108

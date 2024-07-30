@@ -1,0 +1,578 @@
+{
+    "Default": {
+        "display_name": "Default",
+        "options": [
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim_Variant_Type",
+                "option": "Rim Style",
+                "variant": "Rim1",
+                "display_name": "Multi-spoke"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Brake_Color_Variant",
+                "option": "Caliper Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim1_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim2_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim3_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Carpaint_Color_Variant",
+                "option": "Body Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "ON_OFF_Decal_Strip_Variant",
+                "option": "Decal Stripe Visibility",
+                "variant": "On",
+                "display_name": "On"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Decal_Strip_Color_Variant",
+                "option": "Decal Stripe Color",
+                "variant": "Black_Black",
+                "display_name": "Black/Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Fabric_Leather_Color",
+                "variant_set": "Leather_Set_Color_Variant",
+                "option": "Leather Color",
+                "variant": "Blue_Shock",
+                "display_name": "Blue Shock"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok",
+                "variant_set": "Roof_On_Off",
+                "option": "Roof Visibility",
+                "variant": "On",
+                "display_name": "On"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok/Car/Ragnarok/Main/Exterior",
+                "variant_set": "Emblem",
+                "option": "Emblem Color",
+                "variant": "Dark_Metal",
+                "display_name": "Dark"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_lights_on_off",
+                "option": "Screen Visibility",
+                "variant": "On",
+                "display_name": "On"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_Light_LCD_Color_Variant",
+                "option": "Screen Color",
+                "variant": "White",
+                "display_name": "White"
+            }
+        ]
+    },
+    "Stealth": {
+        "display_name": "Stealth",
+        "options": [
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim_Variant_Type",
+                "option": "Rim Style",
+                "variant": "Rim2",
+                "display_name": "5 Spoke"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Brake_Color_Variant",
+                "option": "Caliper Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim1_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim2_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim3_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Carpaint_Color_Variant",
+                "option": "Body Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "ON_OFF_Decal_Strip_Variant",
+                "option": "Decal Stripe Visibility",
+                "variant": "Off",
+                "display_name": "Off"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Decal_Strip_Color_Variant",
+                "option": "Decal Stripe Color",
+                "variant": "Black_Black",
+                "display_name": "Black/Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Fabric_Leather_Color",
+                "variant_set": "Leather_Set_Color_Variant",
+                "option": "Leather Color",
+                "variant": "Noir",
+                "display_name": "Noir"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok",
+                "variant_set": "Roof_On_Off",
+                "option": "Roof Visibility",
+                "variant": "On",
+                "display_name": "On"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok/Car/Ragnarok/Main/Exterior",
+                "variant_set": "Emblem",
+                "option": "Emblem Color",
+                "variant": "Dark_Metal",
+                "display_name": "Dark"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_lights_on_off",
+                "option": "Screen Visibility",
+                "variant": "Off",
+                "display_name": "Off"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_Light_LCD_Color_Variant",
+                "option": "Screen Color",
+                "variant": "Blue",
+                "display_name": "Blue"
+            }
+        ]
+    },
+    "Jensen's Jacket": {
+        "display_name": "Jensen's Jacket",
+        "options": [
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim_Variant_Type",
+                "option": "Rim Style",
+                "variant": "Rim3",
+                "display_name": "Forked Spokes"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Brake_Color_Variant",
+                "option": "Caliper Color",
+                "variant": "Nvidia_Green",
+                "display_name": "Nvidia Green"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim1_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Nvidia_Green",
+                "display_name": "NVIDIA Green"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim2_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Nvidia_Green",
+                "display_name": "NVIDIA Green"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim3_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Nvidia_Green",
+                "display_name": "NVIDIA Green"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Carpaint_Color_Variant",
+                "option": "Body Color",
+                "variant": "Nvidia_Green",
+                "display_name": "Nvidia green"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "ON_OFF_Decal_Strip_Variant",
+                "option": "Decal Stripe Visibility",
+                "variant": "On",
+                "display_name": "On"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Decal_Strip_Color_Variant",
+                "option": "Decal Stripe Color",
+                "variant": "Black_Black",
+                "display_name": "Black/Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Fabric_Leather_Color",
+                "variant_set": "Leather_Set_Color_Variant",
+                "option": "Leather Color",
+                "variant": "Nvidia_Green",
+                "display_name": "Nvidia Green"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok",
+                "variant_set": "Roof_On_Off",
+                "option": "Roof Visibility",
+                "variant": "Off",
+                "display_name": "Off"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok/Car/Ragnarok/Main/Exterior",
+                "variant_set": "Emblem",
+                "option": "Emblem Color",
+                "variant": "Dark_Metal",
+                "display_name": "Dark"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_lights_on_off",
+                "option": "Screen Visibility",
+                "variant": "Off",
+                "display_name": "Off"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_Light_LCD_Color_Variant",
+                "option": "Screen Color",
+                "variant": "Blue",
+                "display_name": "Blue"
+            }
+        ]
+    },
+    "Three Crowns": {
+        "display_name": "Three Crowns",
+        "options": [
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim_Variant_Type",
+                "option": "Rim Style",
+                "variant": "Rim1",
+                "display_name": "Multi-spoke"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Brake_Color_Variant",
+                "option": "Caliper Color",
+                "variant": "Blue_Chroma",
+                "display_name": "Blue Chroma"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim1_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Metal",
+                "display_name": "Metal"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim2_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Metal",
+                "display_name": "Metal"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim3_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Metal",
+                "display_name": "Metal"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Carpaint_Color_Variant",
+                "option": "Body Color",
+                "variant": "Blue",
+                "display_name": "Blue"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "ON_OFF_Decal_Strip_Variant",
+                "option": "Decal Stripe Visibility",
+                "variant": "On",
+                "display_name": "On"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Decal_Strip_Color_Variant",
+                "option": "Decal Stripe Color",
+                "variant": "Yellow_White",
+                "display_name": "Yellow/White"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Fabric_Leather_Color",
+                "variant_set": "Leather_Set_Color_Variant",
+                "option": "Leather Color",
+                "variant": "Yellow_Sport",
+                "display_name": "Yellow Sport"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok",
+                "variant_set": "Roof_On_Off",
+                "option": "Roof Visibility",
+                "variant": "On",
+                "display_name": "On"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok/Car/Ragnarok/Main/Exterior",
+                "variant_set": "Emblem",
+                "option": "Emblem Color",
+                "variant": "Full_Color",
+                "display_name": "Full Color"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_lights_on_off",
+                "option": "Screen Visibility",
+                "variant": "Off",
+                "display_name": "Off"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_Light_LCD_Color_Variant",
+                "option": "Screen Color",
+                "variant": "Blue",
+                "display_name": "Blue"
+            }
+        ]
+    },
+    "Ghost": {
+        "display_name": "Ghost",
+        "options": [
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim_Variant_Type",
+                "option": "Rim Style",
+                "variant": "Rim1",
+                "display_name": "Multi-spoke"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Brake_Color_Variant",
+                "option": "Caliper Color",
+                "variant": "Gold",
+                "display_name": "Gold"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim1_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Gold",
+                "display_name": "Gold"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim2_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Gold",
+                "display_name": "Gold"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim3_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Gold",
+                "display_name": "Gold"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Carpaint_Color_Variant",
+                "option": "Body Color",
+                "variant": "White",
+                "display_name": "White"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "ON_OFF_Decal_Strip_Variant",
+                "option": "Decal Stripe Visibility",
+                "variant": "Off",
+                "display_name": "Off"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Decal_Strip_Color_Variant",
+                "option": "Decal Stripe Color",
+                "variant": "Black_Black",
+                "display_name": "Black/Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Fabric_Leather_Color",
+                "variant_set": "Leather_Set_Color_Variant",
+                "option": "Leather Color",
+                "variant": "Cream_Cappuccino",
+                "display_name": "Cream Cappucino"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok",
+                "variant_set": "Roof_On_Off",
+                "option": "Roof Visibility",
+                "variant": "On",
+                "display_name": "On"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok/Car/Ragnarok/Main/Exterior",
+                "variant_set": "Emblem",
+                "option": "Emblem Color",
+                "variant": "Gold",
+                "display_name": "Gold"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_lights_on_off",
+                "option": "Screen Visibility",
+                "variant": "Off",
+                "display_name": "Off"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_Light_LCD_Color_Variant",
+                "option": "Screen Color",
+                "variant": "Blue",
+                "display_name": "Blue"
+            }
+        ]
+    },
+    "Redline": {
+        "display_name": "Redline",
+        "options": [
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim_Variant_Type",
+                "option": "Rim Style",
+                "variant": "Rim2",
+                "display_name": "5 Spoke"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Brake_Color_Variant",
+                "option": "Caliper Color",
+                "variant": "Red",
+                "display_name": "Red"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim1_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Silver",
+                "display_name": "Silver"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim2_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Silver",
+                "display_name": "Silver"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Tires",
+                "variant_set": "Rim3_Color_Variant",
+                "option": "Rim Color",
+                "variant": "Silver",
+                "display_name": "Silver"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Carpaint_Color_Variant",
+                "option": "Body Color",
+                "variant": "Red",
+                "display_name": "Red"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "ON_OFF_Decal_Strip_Variant",
+                "option": "Decal Stripe Visibility",
+                "variant": "Off",
+                "display_name": "Off"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/AUTOMOTIVE_MATERIALS/Carpaint",
+                "variant_set": "Decal_Strip_Color_Variant",
+                "option": "Decal Stripe Color",
+                "variant": "Black_Black",
+                "display_name": "Black/Black"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Fabric_Leather_Color",
+                "variant_set": "Leather_Set_Color_Variant",
+                "option": "Leather Color",
+                "variant": "Red_Sport",
+                "display_name": "Red Sport"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok",
+                "variant_set": "Roof_On_Off",
+                "option": "Roof Visibility",
+                "variant": "Off",
+                "display_name": "Off"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Koenigsegg_Ragnarok/Car/Ragnarok/Main/Exterior",
+                "variant_set": "Emblem",
+                "option": "Emblem Color",
+                "variant": "Silver",
+                "display_name": "Silver"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_lights_on_off",
+                "option": "Screen Visibility",
+                "variant": "On",
+                "display_name": "On"
+            },
+            {
+                "prim_path": "/World/Configurable_Assets/Koenigsegg_Ragnarok_Variants_Scene/Auto_Mats/INT_Lights_LCDs",
+                "variant_set": "Interior_Light_LCD_Color_Variant",
+                "option": "Screen Color",
+                "variant": "Red",
+                "display_name": "Red"
+            }
+        ]
+    }
+}
