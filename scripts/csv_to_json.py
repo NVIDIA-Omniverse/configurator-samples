@@ -119,8 +119,8 @@ def create_json(options_csv: str, packages_csv: str, output_path: str) -> None:
 
 
 if __name__ == '__main__':
-    options_csv = r".\data\Ragnarok Package Options - Options.csv"
-    packages_csv = r".\data\Ragnarok Package Options - Packages.csv"
-    json_output = r".\data\Ragnarok_Package.json"
+    options_csv = r"..\data\concept_car_options.csv"
+    packages_csv = r"..\data\concept_car_packages.csv"
+    json_output = r"..\data\concept_car.json"
 
     create_json(options_csv, packages_csv, json_output)

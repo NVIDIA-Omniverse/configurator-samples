@@ -2,6 +2,13 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.1] - 2024-08-15
+### Added
+- csv_to_json.py dataset for Concept Car asset
+
+### Changed
+- Renamed csv_to_json.py dataset for Ragnarok asset
+
 ## [1.0.0] - 2024-06-25
 ### Added
 - Optimize File (optimize_file.py) - Conform a Detagen export to Omniverse best practices

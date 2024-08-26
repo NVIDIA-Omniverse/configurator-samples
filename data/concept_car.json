@@ -1,0 +1,612 @@
+{
+    "Blanco": {
+        "display_name": "Blanco",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "Blanco",
+                "display_name": "Blanco"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "WhiteGlow",
+                "display_name": "WhiteGlow"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "White",
+                "display_name": "White"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "Cloud",
+                "display_name": "Cloud"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "Cloud",
+                "display_name": "Cloud"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "Cloud",
+                "display_name": "Cloud"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "White",
+                "display_name": "White"
+            }
+        ]
+    },
+    "BlueSilver": {
+        "display_name": "BlueSilver",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "BlueSilver",
+                "display_name": "BlueSilver"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "Silver",
+                "display_name": "Silver"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "blue",
+                "display_name": "blue"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "White",
+                "display_name": "White"
+            }
+        ]
+    },
+    "Hornet": {
+        "display_name": "Hornet",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "Hornet",
+                "display_name": "Hornet"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "Yellow",
+                "display_name": "Yellow"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "Hornet",
+                "display_name": "Hornet"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "Hornet",
+                "display_name": "Hornet"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "Hornet",
+                "display_name": "Hornet"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Hornet",
+                "display_name": "Hornet"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "Hornet",
+                "display_name": "Hornet"
+            }
+        ]
+    },
+    "Noir": {
+        "display_name": "Noir",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "Noir",
+                "display_name": "Noir"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "Silver",
+                "display_name": "Silver"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "White",
+                "display_name": "White"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "Cloud",
+                "display_name": "Cloud"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "White",
+                "display_name": "White"
+            }
+        ]
+    },
+    "Nvidia_Green_Black": {
+        "display_name": "Nvidia_Green_Black",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "Nvidia_Green_Black",
+                "display_name": "Nvidia_Green_Black"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "NvidiaSet",
+                "display_name": "NvidiaSet"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "blue",
+                "display_name": "blue"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "NvidiaGreen",
+                "display_name": "NvidiaGreen"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "NvidiaGreen",
+                "display_name": "NvidiaGreen"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "NvidiaGreen",
+                "display_name": "NvidiaGreen"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "Blue",
+                "display_name": "Blue"
+            }
+        ]
+    },
+    "Olive": {
+        "display_name": "Olive",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "Olive",
+                "display_name": "Olive"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "Gold",
+                "display_name": "Gold"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "blue",
+                "display_name": "blue"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "Tan",
+                "display_name": "Tan"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "Tan",
+                "display_name": "Tan"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "Blue",
+                "display_name": "Blue"
+            }
+        ]
+    },
+    "Sakura": {
+        "display_name": "Sakura",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "Sakura",
+                "display_name": "Sakura"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "SakuraGlow",
+                "display_name": "SakuraGlow"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "Pink",
+                "display_name": "Pink"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "Cloud",
+                "display_name": "Cloud"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "Cloud",
+                "display_name": "Cloud"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "Cloud",
+                "display_name": "Cloud"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "Pink",
+                "display_name": "Pink"
+            }
+        ]
+    },
+    "Silver": {
+        "display_name": "Silver",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "Silver",
+                "display_name": "Silver"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "Silver",
+                "display_name": "Silver"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "blue",
+                "display_name": "blue"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "Cloud",
+                "display_name": "Cloud"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "Cloud",
+                "display_name": "Cloud"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "Blue",
+                "display_name": "Blue"
+            }
+        ]
+    },
+    "Vampire": {
+        "display_name": "Vampire",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "Vampire",
+                "display_name": "Vampire"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "Rojo",
+                "display_name": "Rojo"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "Red",
+                "display_name": "Red"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "Black",
+                "display_name": "Black"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Red",
+                "display_name": "Red"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "Red",
+                "display_name": "Red"
+            }
+        ]
+    },
+    "Vino": {
+        "display_name": "Vino",
+        "options": [
+            {
+                "prim_path": "/World/Looks",
+                "variant_set": "Carpaint",
+                "option": "Carpaint",
+                "variant": "Vino",
+                "display_name": "Vino"
+            },
+            {
+                "prim_path": "/World/Looks/Wheel_Mats",
+                "variant_set": "Wheel_Colors",
+                "option": "Wheel_Colors",
+                "variant": "Gold",
+                "display_name": "Gold"
+            },
+            {
+                "prim_path": "/World/Looks/lightStripAMat",
+                "variant_set": "Light_strip_color",
+                "option": "Light_strip_color",
+                "variant": "blue",
+                "display_name": "blue"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Pattern_01",
+                "variant_set": "Int_leather",
+                "option": "Int_leather",
+                "variant": "Tan",
+                "display_name": "Tan"
+            },
+            {
+                "prim_path": "/World/Looks/Leather_Grain_04",
+                "variant_set": "Int_leather_dash",
+                "option": "Int_leather_dash",
+                "variant": "Tan",
+                "display_name": "Tan"
+            },
+            {
+                "prim_path": "/World/Looks/Int_Trims",
+                "variant_set": "Int_Trim_Color",
+                "option": "Int_Trim_Color",
+                "variant": "Cream",
+                "display_name": "Cream"
+            },
+            {
+                "prim_path": "/World/Looks/stitchesMat",
+                "variant_set": "Stitch_Color",
+                "option": "Stitch_Color",
+                "variant": "Grey",
+                "display_name": "Grey"
+            },
+            {
+                "prim_path": "/World/Looks/interiorScreenMat_01",
+                "variant_set": "Screen_Color",
+                "option": "Screen_Color",
+                "variant": "Blue",
+                "display_name": "Blue"
+            }
+        ]
+    }
+}
