@@ -197,10 +197,15 @@ Resize textures sizes from hard drive. Made to act on a Configurator Published f
 ##### Get Files Of Type - `def get_files_of_type(root_folder: str, file_extension: str) -> List[str]:`
 At the bottom of the script, modify the target_root directory to the directory you want the script to act on.
 The files list uses a function that will find all files of a type - the default is png files.
-##### Print Info - `def print_info(files: List[str], max_size:int=2048):`
-Scout function to console print all files found larger than the passed in max size argument. Will also inform files with a higher bit depth than 8.
-##### Down Res - `def down_res(files: List[str], max_size:int=1024, enforce_8_bit_depth:bool=False):`
-Down res files to the passed in max size integer and optionally enforce 8 bit images.
+##### Print Info - `def print_info(image_files: List[str], max_size: int = 2048, include_square: bool = True, include_non_square: bool = True, inform_single_color_images: bool = False, single_color_image_max_size: int = 128):`
+Scout function to console print all files found larger than the passed in max size argument and files with a higher bit depth than 8. <br>
+(Optional) Filter out square or non square images. <br>
+(Optional) Detect and report single color images over the passed in size (defaults to 128). 
+##### Down Res - `def down_res(image_files: List[str], max_size: int = 1024, enforce_8_bit_depth: bool = False, include_square: bool = True, include_non_square: bool = True, enforce_single_color_image_size: bool = False, single_color_image_max_size: int = 128):`
+Down res files to the passed in max size integer. <br>
+(Optional) Enforce 8 bit images. <br>
+(Optional) Filter out square or non square images. <br>
+(Optional) Detect and down res single color images. 
 
 ## Snippets
 Bite sized code snippets to show you how to achieve a specific task.
