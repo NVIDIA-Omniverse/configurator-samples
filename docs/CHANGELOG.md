@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.2] - 2024-09-20
+### Added
+- resize_textures.py: Detect and scale single color images.
+- resize_textures.py: Scale non square images based on largest side and aspect ratio maintained.
+- resize_textures.py: Separate square and non square images.
+
 ## [1.0.1] - 2024-08-15
 ### Added
 - csv_to_json.py dataset for Concept Car asset
