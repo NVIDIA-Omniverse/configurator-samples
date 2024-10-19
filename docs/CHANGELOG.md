@@ -8,6 +8,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - Run Variants (cache/run_variants.py) - Run all variants in a stage awaiting the stage to be ready between each variant being set. Works both with caching graph and generic Python as back up triggering variants found.
 - Copy Configurator (cache/copy_configurator.py) - Copy the configurator to another folder on the local disk.
 - Validate Log (cache/validate_log.py) - Find UJITSO errors in log file.
+- resize_textures.py: Detect and scale single color images.
+- resize_textures.py: Scale non square images based on largest side and aspect ratio maintained.
+- resize_textures.py: Separate square and non square images.
   
 ## [1.0.1] - 2024-08-15
 ### Added
