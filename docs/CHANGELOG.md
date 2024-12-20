@@ -2,15 +2,17 @@
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [1.0.3] - 2024-11-26
+### Added
+- create_variant_json_data.py - new script to generate json variant data from your configurator. You can then remove variants that will be processed from your variant data file to minimize cache size and save time. 
+- run_variants.py - New input option for json variant data generated with the script mentioned above. Make sure you pass in the same file when validating the cache.
+
 ## [1.0.2] - 2024-10-10
 ### Added
 - Generate & Validate Cache (cache/generate_validate_cache.bat) - Leveraging the scripts in the cache directory to automate UJITSO caching and validation.
 - Run Variants (cache/run_variants.py) - Run all variants in a stage awaiting the stage to be ready between each variant being set. Works both with caching graph and generic Python as back up triggering variants found.
 - Copy Configurator (cache/copy_configurator.py) - Copy the configurator to another folder on the local disk.
 - Validate Log (cache/validate_log.py) - Find UJITSO errors in log file.
-- resize_textures.py: Detect and scale single color images.
-- resize_textures.py: Scale non square images based on largest side and aspect ratio maintained.
-- resize_textures.py: Separate square and non square images.
   
 ## [1.0.1] - 2024-08-15
 ### Added

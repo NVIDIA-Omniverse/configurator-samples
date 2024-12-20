@@ -4,10 +4,12 @@ python validate_log.py --log_file C:/moved/configurator/cache_validation.log
 or 
 D:/Builds/kit-app-template/_build/windows-x86_64/release/kit/kit.exe --exec "C:/Code/configurator-samples/scripts/cache/validate_log.py --log_file C:/moved/configurator/cache_validation.log"
 """
-
+import omni.kit.app
+import omni.log
 import sys
 import pathlib
 import argparse
+
 
 IGNORE_PROCESSORS = []
 
@@ -22,17 +24,21 @@ def parse_log(log_path: str):
         list: list of errors
     """
     errors = []
-    with open(log_path, "rt", encoding="utf8") as log_file:
-        for line in log_file.readlines():
-            if line.startswith("UJITSO: FAILED"):
-                processor = line.split("Processor: '")[-1].split("' |")[0]
-                # Explicitly skipping MdlToHlslProcessor
-                if processor.startswith('UJITSO-v2-MdlToHlslProcessor-'):
-                    print(f'Found {processor} - skipping')
-                    continue
-                if processor not in IGNORE_PROCESSORS:
-                    errors.append(processor)
-
+    try:
+        with open(log_path, "rt", encoding="utf8") as log_file:
+            for line in log_file.readlines():
+                if line.startswith("UJITSO: FAILED"):
+                    processor = line.split("Processor: '")[-1].split("' |")[0]
+                    # Explicitly skipping MdlToHlslProcessor
+                    if processor.startswith('UJITSO-v2-MdlToHlslProcessor-'):
+                        print(f'Found {processor} - skipping')
+                        continue
+                    if processor not in IGNORE_PROCESSORS:
+                        errors.append(processor)
+    except Exception as error:
+        print(f'Log load error - {error}')
+        omni.log.error(f'Log load error - {error}')
+        omni.kit.app.get_app().post_quit(-1)
     return errors
 
 

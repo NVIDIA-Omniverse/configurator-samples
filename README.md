@@ -6,9 +6,10 @@ Refer to the [End-to-End Configurator Example Guide](https://docs.omniverse.nvid
 
 Available scripts and snippets:<br>
 - Run Variants (cache/run_variants.py) - Finds all variants and runs through them. Waits the stage to be fully ready before each new one is set. If a caching graph is found (`OmniGraph` prim with name `CacheGeneration`), a signal (`GenerateCache`) is emitted for the graph to receive and to run through the authored options.<br>
+- Create Variant Json Data (cache/create_variant_json_data.py) - Creates a json file that contains all the variant sets and variants in the configurator stage. This file can then be edited and variants removed and used as input to the generate and validate cache functions. This will minimize the cache size and speed up iteration if you are dealing with assets that contain more variants than used in your configurator project.
 - Copy Configurator (cache/copy_configurator.py) - Copy the configurator to another folder on the local disk. This is done to test the UJITSO cache from a different locations from where it was authored.
 - Validate Log (cache/validate_log.py) - Find UJITSO errors in log file.
-- Generate & Validate Cache (cache/generate_validate_cache.bat) - This batch script uses the three scripts above to fully automate cache generation and cache validation.
+- Generate & Validate Cache (cache/generate_validate_cache.bat) - This batch script uses the scripts above to fully automate cache generation and cache validation.
 - Optimize File (optimize_file.py) - Conform a DELTAGEN export to Omniverse best practices<br>
 - Visibility Switches (visibility_switches.py) - Modify the switch variant functionality from DELTAGEN exports to visibility toggles<br>
 - CSV Material Replacements (csv_material_replacements.py) - A data driven material replacement workflow<br>
@@ -27,7 +28,7 @@ Scripts containing a bit more involved suggestions on how to solve a particular 
 ### Generate & Validate Cache
 ***Generate and validate UJITSO cache for your asset running a single batch script***<br>
 (*scripts/cache/generate_validate_cache.bat*)<br>
-Uses the three scripts below to (`1`) generate the cache, (`2`) copy the configurator to a different location, (`3`) run all the options with flags to log any UJITSO cache issues, and (`4`) parse the log and print out any issues.<br><br>
+Uses the scripts below to (`1`) generate the cache, (`2`) copy the configurator to a different location, (`3`) run all the options with flags to log any UJITSO cache issues, and (`4`) parse the log and print out any issues.<br><br>
 To generate the cache, the kit app is ran with the following UJITSO flags and by running all the variants in the file after it has been loaded:
 - `--/UJITSO/datastore/localCachePath="{path_to_cache_directory}"`
 - `--/UJITSO/writeCacheWithAssetRoot="{path_to_source_directory}"`<br>
@@ -39,11 +40,15 @@ After the configurator directory has been copied elsewhere, the log get's genera
   
 Details can be seen by editing the scripts/cache/generate_validate_cache.bat file.
 
+### Generate Variant Data
+***Write all variants in the stage to a json file.***<br>
+(*scripts/cache/create_variant_json_data.py*)<br>
+Finds all variants and writes them to a json file. You can then edit this file and remove variant sets, variants, and/or entire prim entries. This lets you author which options get set and subsequently cached out. You may have a lot of variants that are not in use. Just make sure to use the variant data json file as input for both caching and validation which is the default in the batch file (if the variant data file does not exist the run variants script will skip the variant data input).
 
 ### Run Variants
 ***Run all variants in a stage awaiting the stage to be ready between each variant being set.***<br>
 (*scripts/cache/run_variants.py*)<br>
-Finds all variants and runs through them. Waits the stage to be ready before each new one is set. If a caching graph is found (`OmniGraph` prim with name `CacheGeneration`), a signal (`GenerateCache`) is emitted for the graph to receive and to run through the authored options. This lets you author which options get ran and cached out. You may have a lot of variants that are not in use.
+Finds all variants and runs through them. Waits the stage to be ready before each new one is set. If a caching graph is found (`OmniGraph` prim with name `CacheGeneration`), a signal (`GenerateCache`) is emitted for the graph to receive and to run through the authored options. This lets you author which options get ran and cached out. You may have a lot of variants that are not in use. Another mechanism to minimize the cache size if you are dealing with a lot of unused variants in the variant data input file that can be generated with the script above, edited, and used as an input here.
 
 ### Copy Configurator
 ***Copy the configurator to another folder on the local disk.***<br>

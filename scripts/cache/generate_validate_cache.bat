@@ -9,13 +9,16 @@ set SCRIPT_ROOT=C:/Code/configurator-samples/scripts/cache/
 
 :: These paths are derived - only change if you need to
 set CONFIGURATOR_SOURCE_FILE=product_configurator_base.usd
+set CONFIGURATOR_VARIANT_DATA=%CONFIGURATOR_SOURCE_FOLDER%variant_data.json
 set CONFIGURATOR_SOURCE_PATH=%CONFIGURATOR_SOURCE_FOLDER%%CONFIGURATOR_SOURCE_FILE%
 set CACHE_GENERATION_PATH=%CONFIGURATOR_SOURCE_FOLDER%cache
 set CACHE_GENERATION_LOG=%CONFIGURATOR_SOURCE_FOLDER%ujitso.log
+set VARIANT_DATA_LOG=%CONFIGURATOR_SOURCE_FOLDER%json_data.log
 set CONFIGURATOR_MOVED_PATH=%CONFIGURATOR_MOVE_DIR%%CONFIGURATOR_SOURCE_FILE%
 set CACHE_VALIDATION_PATH=%CONFIGURATOR_MOVE_DIR%cache
 set CACHE_VALIDATION_LOG=%CONFIGURATOR_MOVE_DIR%cache_validation.log
 set SCRIPT_RUN_VARIANTS=%SCRIPT_ROOT%run_variants.py
+set SCRIPT_GENERATE_VARIANT_DATA=%SCRIPT_ROOT%create_variant_json_data.py
 set SCRIPT_COPY_CONFIGURATOR=%SCRIPT_ROOT%copy_configurator.py
 set SCRIPT_CACHE_VALIDATION=%SCRIPT_ROOT%validate_log.py
 
@@ -27,12 +30,20 @@ ECHO Configurator Validation: %CONFIGURATOR_MOVED_PATH%
 ECHO Script Root: %SCRIPT_ROOT%
 ECHO -----------------------------------------------
 
+:: This is to show how to generate json variant data - uncomment if needed
+:: ECHO -----------------------------------------------
+:: ECHO --- Running Variant Data Generation to %CONFIGURATOR_VARIANT_DATA% ---
+:: call %KIT_PATH% %KIT_APP% --exec "%SCRIPT_GENERATE_VARIANT_DATA% --json_path %CONFIGURATOR_VARIANT_DATA%" --/log/file=%VARIANT_DATA_LOG% --/app/auto_load_usd="%CONFIGURATOR_SOURCE_PATH%" --no-window
+:: ECHO --- Variant Data Generation complete - feel free to edit %CONFIGURATOR_VARIANT_DATA% (Hit Ctrl + C and then Y to stop here) ---
+:: pause
+
 ECHO --- Running Cache Generation ---
 ECHO Caching options in: %CONFIGURATOR_SOURCE_PATH%
 ECHO Using Script: %SCRIPT_RUN_VARIANTS%
 ECHO Generating Cache to: %CACHE_GENERATION_PATH%
 ECHO Log Path: %CACHE_GENERATION_LOG%
-call %KIT_PATH% %KIT_APP% --/UJITSO/datastore/localCachePath="%CACHE_GENERATION_PATH%" --/UJITSO/writeCacheWithAssetRoot="%CONFIGURATOR_SOURCE_FOLDER%" --exec %SCRIPT_RUN_VARIANTS% --/log/file=%CACHE_GENERATION_LOG% --/app/auto_load_usd="%CONFIGURATOR_SOURCE_PATH%" --no-window
+:: Note that json data will not be used if the file does not exist
+call %KIT_PATH% %KIT_APP% --/UJITSO/datastore/localCachePath="%CACHE_GENERATION_PATH%" --/UJITSO/writeCacheWithAssetRoot="%CONFIGURATOR_SOURCE_FOLDER%" --exec "%SCRIPT_RUN_VARIANTS% --json_path %CONFIGURATOR_VARIANT_DATA%" --/log/file=%CACHE_GENERATION_LOG% --/app/auto_load_usd="%CONFIGURATOR_SOURCE_PATH%" --no-window
 ECHO --- Cache Generation Complete ---
 
 ECHO -----------------------------------------------
@@ -49,7 +60,8 @@ ECHO Validating cache from: %CONFIGURATOR_MOVED_PATH%
 ECHO Using Script: %SCRIPT_RUN_VARIANTS%
 ECHO Validating Cache: %CACHE_VALIDATION_PATH%
 ECHO Log Path: %CACHE_VALIDATION_LOG%
-call %KIT_PATH% %KIT_APP% --/UJITSO/datastore/localCachePath="%CACHE_VALIDATION_PATH%" --/UJITSO/readCacheWithAssetRoot="%CONFIGURATOR_MOVE_DIR%" --/UJITSO/failedDepLoadingLogging=true --exec %SCRIPT_RUN_VARIANTS% --/log/file=%CACHE_VALIDATION_LOG% --/app/auto_load_usd="%CONFIGURATOR_MOVED_PATH%" --no-window
+:: Note that json data will not be used if the file does not exist
+call %KIT_PATH% %KIT_APP% --/UJITSO/datastore/localCachePath="%CACHE_VALIDATION_PATH%" --/UJITSO/readCacheWithAssetRoot="%CONFIGURATOR_MOVE_DIR%" --/UJITSO/failedDepLoadingLogging=true --exec "%SCRIPT_RUN_VARIANTS% --json_path %CONFIGURATOR_VARIANT_DATA%" --/log/file=%CACHE_VALIDATION_LOG% --/app/auto_load_usd="%CONFIGURATOR_MOVED_PATH%" --no-window
 ECHO --- Cache Validation Complete ---
 
 ECHO -----------------------------------------------

@@ -3,22 +3,27 @@ This module will run all variants in the stage that has been opened.
 It will await stage loading complete before doing so and will also await stage ready for each variant that has been set.
 If a caching graph is found in the stage - OmniGraph prim with the name 'CacheGeneration', it will emit the signal 'GenerateCache' for the graph to run. The graph has it's own mechanism to delay after a variant has been set.
 If no graph is found, Python will be used to cycle through all variants. The StateManager is queried for each variant, until the staged has stopped loading the necessary data before moving on to the next variant.
+New: When Python is used to cycle through all variants, you can pass in variant json data that can be created with the create_variant_json_data.py script. Make sure that you also validate the cache with the json data or you will have errors for the variants skipped that are not part of the variant json data file.
+The reason you might want to use the json file as input is that you have an excessive amount of variants and all of them will not be used in your configurator project. This scenario will severely bloat iteration time and cache size.
 
 Example Usage to generate cache (change to your local paths):
-D:/Builds/kit-app-template/_build/windows-x86_64/release/kit/kit.exe D:/Builds/kit-app-template/_build/windows-x86_64/release/apps/my_company.my_usd_viewer.kit  --/UJITSO/datastore/localCachePath="C:/configurator/cache" --/UJITSO/writeCacheWithAssetRoot="C:/configurator/" --exec C:/Code/configurator-samples/scripts/cache/run_variants.py --/log/file=C:/configurator/ujitso.log --/app/auto_load_usd='C:/configurator/product_configurator_base.usd' --no-window
+D:/Builds/kit-app-template/_build/windows-x86_64/release/kit/kit.exe D:/Builds/kit-app-template/_build/windows-x86_64/release/apps/my_company.my_usd_viewer.kit  --/UJITSO/datastore/localCachePath="C:/configurator/cache" --/UJITSO/writeCacheWithAssetRoot="C:/configurator/" --exec "C:/Code/configurator-samples/scripts/cache/run_variants.py --json_path C:/configurator/variant_data.json" --/log/file=C:/configurator/ujitso.log --/app/auto_load_usd='C:/configurator/product_configurator_base.usd' --no-window
 -- Used copy_configurator.py to copy to different folder
 
 Example Usage to validate cache (change to your local paths):
-D:/Builds/kit-app-template/_build/windows-x86_64/release/kit/kit.exe D:/Builds/kit-app-template/_build/windows-x86_64/release/apps/my_company.my_usd_viewer.kit  --/UJITSO/datastore/localCachePath="C:/moved/configurator/cache" --/UJITSO/readCacheWithAssetRoot="C:/moved/configurator/" --/UJITSO/failedDepLoadingLogging=true --exec C:/Code/configurator-samples/scripts/cache/run_variants.py --/log/file=C:/moved/configurator/cache_validation.log --/app/auto_load_usd='C:/moved/configurator/product_configurator_base.usd' --no-window
+D:/Builds/kit-app-template/_build/windows-x86_64/release/kit/kit.exe D:/Builds/kit-app-template/_build/windows-x86_64/release/apps/my_company.my_usd_viewer.kit  --/UJITSO/datastore/localCachePath="C:/moved/configurator/cache" --/UJITSO/readCacheWithAssetRoot="C:/moved/configurator/" --/UJITSO/failedDepLoadingLogging=true --exec "C:/Code/configurator-samples/scripts/cache/run_variants.py --json_path C:/configurator/variant_data.json" --/log/file=C:/moved/configurator/cache_validation.log --/app/auto_load_usd='C:/moved/configurator/product_configurator_base.usd' --no-window
 -- After this ran validate_log.py to get any invalid cache results out.
 """
 
 import omni.kit.app
 import omni.usd
 import asyncio
+import os
 import carb
 import omni.log
 import time
+import argparse
+import json
 
 # max wait time if we found an action graph named cache generation
 MAX_WAIT_TIME = 3600  # 1 hour
@@ -177,7 +182,7 @@ def on_complete(event: carb.events.IEvent):
     global completed
     completed = True
 
-async def run():
+async def run(json_path:str = None):
     """
     This function runs through all variants either through graph or Python. 
     It will also evaluate the readiness of the stage before going to the next variant for the Python implementation.
@@ -217,13 +222,53 @@ async def run():
     else:
         print('No caching graph found - Python triggering variants...')
         omni.log.info('No caching graph found - Python triggering variants...')
+        json_data = {}
+        if json_path:
+            print(f'Incoming json data - reading {json_path}')
+            omni.log.info(f'Incoming json data - reading {json_path}')
+            try:
+                with open(json_path) as f:
+                    json_data = json.load(f)
+            except Exception as error:
+                print(f'Json loading file path errored - {error}')
+                omni.log.info(f'Incoming json data - reading {json_path}')
+                return_code = -1
+                omni.kit.app.get_app().post_quit(return_code)
+
         prims = get_prims_with_variant_sets()
         for prim in prims:
+            # If json data, seed the variant set dictionary and see if the prim path is in the json data
+            variant_set_dict = {}
+            if json_data:
+                if prim.GetPrimPath().pathString not in json_data.keys():
+                    print(f'Skipping {prim.GetPrimPath().pathString} - not in json data file')
+                    omni.log.info(f'Skipping {prim.GetPrimPath().pathString} - not in json data file')
+                    continue
+                else: 
+                    variant_set_dict = json_data[prim.GetPrimPath().pathString]
+
             variant_sets = prim.GetVariantSets()
             for variant_set_name in variant_sets.GetNames():
+                # If json data, seed the variants and see if the variant set is in the json data
+                variant_list = []
+                if json_data:
+                    if variant_set_name not in variant_set_dict.keys():
+                        print(f'Skipping {variant_set_name} for prim path {prim.GetPrimPath().pathString} - not in json data file')
+                        omni.log.info(f'Skipping {variant_set_name} for prim path {prim.GetPrimPath().pathString} - not in json data file')
+                        continue
+                    else:
+                        variant_list = variant_set_dict[variant_set_name]
+
                 usd_variant_set = variant_sets.GetVariantSet(variant_set_name)
                 variant_names = usd_variant_set.GetVariantNames()
                 for variant_name in variant_names:
+                    # If json data, see if the variant is in the json data
+                    if json_data:
+                        if variant_name not in variant_list:
+                            print(f'Skipping {variant_name} for variant set {variant_set_name} - not in json data file')
+                            omni.log.info(f'Skipping {variant_name} for variant set {variant_set_name} - not in json data file')
+                            continue
+
                     print(f'Setting variant for {prim} - {variant_name} - {variant_set_name}')
                     omni.log.info(f'Setting variant for {prim} - {variant_name} - {variant_set_name}')
                     state_manager.variant_work = True
@@ -235,10 +280,23 @@ async def run():
                                 await omni.kit.app.get_app().next_update_async()
                             omni.log.info('interupting loop - no variant work is happening')
                             break
+
     omni.kit.app.get_app().post_quit(return_code)
 
 
 if __name__ == "__main__":
-    asyncio.ensure_future(run())
+    parser = argparse.ArgumentParser(description="Run through and set each variant in the stage")
+    parser.add_argument("--json_path", nargs='?', const=1, type=str, default=None, help="Optional path to json file with variants (can be generated with create_variant_json_data.py).")
+    args = parser.parse_args()
+    json_path = None
+    if args.json_path:
+        if os.path.exists(args.json_path):
+            print(f'Using json data file - {args.json_path} only variants in the file will be triggered.')
+            omni.log.info(f'Using json data file - {args.json_path} only variants in the file will be triggered.')
+            json_path = args.json_path
+        else:
+            print(f'Skipping json data. File does not exist - {args.json_path} - all variants or caching graph will be used.')
+            omni.log.info(f'Skipping json data. File does not exist - {args.json_path} - all variants or caching graph will be used.')
+    asyncio.ensure_future(run(json_path))
 
 
