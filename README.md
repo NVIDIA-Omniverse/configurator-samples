@@ -1,5 +1,9 @@
 # Configurator Samples
 
+## :warning: Deprecation Notice
+
+**This repository will be deprecated on January 5, 2026.**
+
 This repo is housing sample scripts and snippets to show developers how they could solve specific problems when creating configurators.<br> It is not meant as complete solutions (if it works for you out of the box - great), but more like a source of inspiration for your own solutions.<br>
 
 Refer to the [End-to-End Configurator Example Guide](https://docs.omniverse.nvidia.com/auto-config/latest/index.html) for instructions on creating a configurator from start to finish.
